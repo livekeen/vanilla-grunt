@@ -1,7 +1,4 @@
-build
-
-npm-debug.log
 node_modules
-
 .sass-cache
-node_modules/grunt/package.json
+npm-debug.log
+build
