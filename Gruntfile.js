@@ -11,7 +11,7 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('dev',
     'Start a live-reloading dev webserver on localhost.',
-    ['sass', 'imagemin', 'watch']);
+    ['sass', 'imagemin', 'jade:dev', 'connect', 'watch']);
 
   grunt.registerTask('default', ['dev']);
 
