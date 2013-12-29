@@ -9,6 +9,10 @@ module.exports = function(grunt) {
   grunt.loadTasks('grunt');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('dev',
+    'Start a live-reloading dev webserver on localhost.',
+    ['sass', 'imagemin', 'watch']);
+
+  grunt.registerTask('default', ['dev']);
 
 };
