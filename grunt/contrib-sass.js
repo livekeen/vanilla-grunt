@@ -7,10 +7,13 @@ module.exports = function(grunt) {
       options: {
         style: 'compressed'
       },
-      files: {
-        // 'destination': 'source'
-        'build/assets/css/styles.css': 'app/assets/sass/styles.sass'
-      }
+      files: [{
+        expand: true,
+        cwd: 'source',
+        src: '**/styles.sass',
+        dest: 'build',
+        ext: '.css'
+      }]
     }
   });
 

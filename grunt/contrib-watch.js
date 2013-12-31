@@ -8,22 +8,21 @@ module.exports = function(grunt) {
       livereload: true, // adds livereload support
     },
 
-    // watches javascript files
-    scripts: {  
-      files: ['app/assets/js/*.js'],
-      tasks: ['concat', 'uglify'],
-      options: {
-        spawn: false,
-      },
+    stylesheets: {
+      files: 'source/**/*.sass',
+      tasks: [ 'stylesheets' ]
     },
-
-    // watches sass files
-    css: { 
-      files: ['app/assets/sass/*.sass'],
-      tasks: ['sass'],
-      options: {
-        spawn: false,
-      }
+    scripts: {
+      files: 'source/**/*.js',
+      tasks: [ 'scripts' ]
+    },
+    jade: {
+      files: 'source/**/*.jade',
+      tasks: [ 'jade' ]
+    },
+    copy: {
+      files: [ 'source/**', '!source/**/*.sass', '!source/**/*.js', '!source/**/*.jade' ],
+      tasks: [ 'copy' ]
     }
 
   });
