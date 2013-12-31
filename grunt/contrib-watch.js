@@ -4,10 +4,6 @@ module.exports = function(grunt) {
 
   grunt.config('watch', {
 
-    options: {
-      livereload: true, // adds livereload support
-    },
-
     stylesheets: {
       files: 'source/**/*.sass',
       tasks: [ 'stylesheets' ]
@@ -23,7 +19,7 @@ module.exports = function(grunt) {
     copy: {
       files: [ 'source/**', '!source/**/*.sass', '!source/**/*.scss', '!source/**/*.coffee', '!source/**/*.jade' ],
       tasks: [ 'copy' ]
-    }
+    },
 
   });
 

@@ -10,12 +10,6 @@ module.exports = function(grunt) {
         base: 'build',
         hostname: '*'
       },
-      dev: {},
-      prod: {
-        options: {
-          keepalive: true,
-        }
-      }
     }
 
   });
