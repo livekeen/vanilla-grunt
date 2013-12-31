@@ -11,3 +11,8 @@ Next, you'll want to install Grunt's command line interface (CLI) globally. You 
 1. Change `cd ...` to this project's root directory
 2. Run `npm install` to install Grunt, Grunt plugins, etc.
 3. Run `grunt`
+
+### Build Something Already (BSA)
+- Edit **source**
+- View locally at `localhost:8000`
+- Deploy **build**
