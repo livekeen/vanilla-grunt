@@ -8,7 +8,7 @@ module.exports = function(grunt) {
   // Load per-task config from separate files.
   grunt.loadTasks('grunt');
 
-  // Default task(s).
+  // Pre-task(s).
   grunt.registerTask(
     'stylesheets', 
     'Compiles the stylesheets.', 
@@ -32,7 +32,8 @@ module.exports = function(grunt) {
     'Compiles all of the assets and copies the files to the build directory.', 
     [ 'clean:build', 'copy', 'stylesheets', 'scripts', 'images', 'jade', 'cleanempty' ]
   );
-
+  
+  // Default task(s).
   grunt.registerTask(
     'dev',
     'Start a live-reloading dev webserver on localhost.',
