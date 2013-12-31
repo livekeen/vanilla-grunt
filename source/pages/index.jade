@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title Hello
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='robots', content='')
+    link(rel='author', href='humans.txt')
+
+    // [if lte IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>[endif]
+
+    meta(name='viewport', content='width=device-width; initial-scale=1.0')
+
+    link(rel="stylesheet", href="styles.css", type="text/css")
+
+  body
+    h1 Jade - node template engine
+    #container.col
+      if youAreUsingJade
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Jade is a terse and simple templating language with a strong focus on performance and powerful features.
