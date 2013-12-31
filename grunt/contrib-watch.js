@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       tasks: [ 'jade' ]
     },
     copy: {
-      files: [ 'source/**', '!source/**/*.sass', '!source/**/*.js', '!source/**/*.jade' ],
+      files: [ 'source/**', '!source/**/*.sass', '!source/**/*.scss', '!source/**/*.coffee', '!source/**/*.jade' ],
       tasks: [ 'copy' ]
     }
 

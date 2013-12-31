@@ -12,7 +12,7 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'stylesheets', 
     'Compiles the stylesheets.', 
-    [ 'sass', 'autoprefixer', 'clean:stylesheets' ]
+    [ 'sass', 'autoprefixer', 'cssmin', 'clean:stylesheets' ]
   );
 
   grunt.registerTask(
@@ -22,9 +22,15 @@ module.exports = function(grunt) {
   );
 
   grunt.registerTask(
+    'images', 
+    'Compiles the Image files.', 
+    [ 'imagemin' ]
+  );
+
+  grunt.registerTask(
     'build', 
     'Compiles all of the assets and copies the files to the build directory.', 
-    [ 'clean:build', 'copy', 'stylesheets', 'scripts', 'jade' ]
+    [ 'clean:build', 'copy', 'stylesheets', 'scripts', 'images', 'jade', 'cleanempty' ]
   );
 
   grunt.registerTask(

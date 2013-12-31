@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: 'app/pages',
+        cwd: 'source/pages',
         src: [ '**/*.jade' ],
         dest: 'build',
         ext: '.html'
