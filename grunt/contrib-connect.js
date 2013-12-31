@@ -6,7 +6,9 @@ module.exports = function(grunt) {
 
     server: {
       options: {
-        base: 'build/wwwroot'
+        port: 8000,
+        base: 'build',
+        hostname: '*'
       },
       dev: {},
       prod: {
