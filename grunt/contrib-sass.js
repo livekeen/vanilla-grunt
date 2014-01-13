@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: 'source',
+        cwd: 'source/sass',
         src: '**/*.sass',
         dest: 'build',
         ext: '.css'

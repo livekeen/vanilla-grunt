@@ -12,13 +12,13 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'stylesheets', 
     'Compiles the stylesheets.', 
-    [ 'sass', 'autoprefixer', 'cssmin', 'clean:stylesheets' ]
+    [ 'clean:stylesheets', 'sass', 'autoprefixer' ]
   );
 
   grunt.registerTask(
     'scripts', 
     'Compiles the JavaScript files.', 
-    [ 'uglify', 'clean:scripts' ]
+    [ 'clean:scripts', 'uglify' ]
   );
 
   grunt.registerTask(

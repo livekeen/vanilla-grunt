@@ -8,10 +8,10 @@ module.exports = function(grunt) {
       src: [ 'build', '!build/assets' ]
     },
     stylesheets: {
-      src: [ 'build/**/*.css', '!build/styles.css' ]
+      src: [ 'build/**/*.css' ]
     },
     scripts: {
-      src: [ 'build/**/*.js', '!build/functions.js' ]
+      src: [ 'build/**/*.js' ]
     },
 
   });

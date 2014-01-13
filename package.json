@@ -5,7 +5,7 @@
   "description": "My starting point for new builds.",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-autoprefixer": "0.2.x",
+    "grunt-autoprefixer": "~0.6.4",
     "grunt-contrib-clean": "0.5.x",
     "grunt-cleanempty": "~0.2.0",
     "grunt-contrib-concat": "~0.3.0",
