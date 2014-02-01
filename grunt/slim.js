@@ -1,19 +1,19 @@
-// https://github.com/gruntjs/grunt-contrib-jade
+// https://github.com/matsumos/grunt-slim
 
 module.exports = function(grunt) {
 
-  grunt.config('jade', {
-    build: {
+  grunt.config('slim', {
+    dist: {
       files: [{
         expand: true,
         cwd: 'source/pages',
-        src: [ '{,*/}*.jade' ],
+        src: [ '{,*/}*.slim' ],
         dest: 'build',
         ext: '.html'
       }]
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-slim');
 
 };

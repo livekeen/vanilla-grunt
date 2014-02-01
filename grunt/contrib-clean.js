@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.config('clean', {
 
     build: {
-      src: [ 'build', '!build/assets' ]
+      src: [ 'build' ]
     },
     stylesheets: {
       src: [ 'build/**/*.css' ]

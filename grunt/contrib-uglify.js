@@ -8,9 +8,10 @@ module.exports = function(grunt) {
       options: {
         mangle: false
       },
-      files: {
-        'build/functions.js': [ 'build/**/*.js' ]
-      }
+
+      src: 'build/*.js',
+      dest: 'build/functions.js'
+      
     }
 
   });

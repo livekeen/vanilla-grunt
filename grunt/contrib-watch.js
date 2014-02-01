@@ -5,20 +5,29 @@ module.exports = function(grunt) {
   grunt.config('watch', {
 
     stylesheets: {
-      files: 'source/**/*.sass',
-      tasks: [ 'stylesheets' ]
+      files: ['source/**/*.sass', 'source/**/*.scss'],
+      tasks: [ 'stylesheets' ],
+      options: {
+        livereload: true,
+      }
     },
     scripts: {
       files: 'source/**/*.js',
-      tasks: [ 'scripts' ]
+      tasks: [ 'scripts'],
+      options: {
+        livereload: true,
+      }
     },
     jade: {
       files: 'source/**/*.jade',
-      tasks: [ 'jade' ]
+      tasks: [ 'jade' ],
+      options: {
+        livereload: true,
+      }
     },
     copy: {
-      files: [ 'source/**', '!source/**/*.sass', '!source/**/*.scss', '!source/**/*.coffee', '!source/**/*.jade' ],
-      tasks: [ 'copy' ]
+      files: [ 'source/**', '!source/**/*.sass', '!source/**/*.scss', '!source/**/*.coffee', '!source/**/*.js', '!source/**/*.jade' ],
+      tasks: [ 'copy', 'cleanempty' ]
     },
 
   });

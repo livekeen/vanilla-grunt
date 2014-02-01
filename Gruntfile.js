@@ -18,7 +18,7 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'scripts', 
     'Compiles the JavaScript files.', 
-    [ 'clean:scripts', 'uglify' ]
+    [ 'clean:scripts', 'concat', 'uglify' ]
   );
 
   grunt.registerTask(
