@@ -1,3 +1,6 @@
+# DEPRECATED: [I've been replaced by this!](https://github.com/livekeen/vanilla)
+Keeping this (for now) for nostalgia-sake (also because I spent way too long on this to just delete it :D)
+
 # Vanilla
 So I decided I'd try setting up my vanilla build to support Grunt. We'll see how this goes...
 
